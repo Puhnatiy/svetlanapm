@@ -11,7 +11,7 @@ def check_data(album_data):
     """
     Проверка данных на корректность. Тестовые данные проверям только на пустую строку, год проверяем чтоб был в диапазоне от 1900 до 2020
     """
-    if (album_data["year"] and album_data["artist"] and album_data["album"] and album_data["album"]):
+    if (album_data["year"] and album_data["artist"] and album_data["album"] and album_data["genre"]):
         if album_data["year"].isdigit():
             if (int(album_data["year"])>=1900 and int(album_data["year"])<=2020 and album_data["artist"]!="" and album_data["album"]!="" and album_data["genre"]!=""):
                 return True
